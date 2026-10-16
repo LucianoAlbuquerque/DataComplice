@@ -1,11 +1,11 @@
 Metadata-Version: 2.4
-Name: project1
+Name: DataComplice
 Version: 0.0.1
-Summary: project1
-Author-email: Seu nome <seu@email.com>
+Summary: DataComplice
+Author-email: Seu nome <lucianofreire.albuquerque@gmail.com>
 License-Expression: MIT
 Project-URL: Homepage, https://www.otaviomiranda.com.br/
-Requires-Python: >=3.13
+Requires-Python: >=3.15
 Description-Content-Type: text/markdown
 Requires-Dist: python-dotenv>=1.1.0
 Provides-Extra: dev
