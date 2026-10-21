@@ -1,2 +1,3 @@
 datacomplice
+logging
 my_package

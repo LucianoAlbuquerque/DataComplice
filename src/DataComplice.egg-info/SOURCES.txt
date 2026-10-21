@@ -7,5 +7,6 @@ src/DataComplice.egg-info/entry_points.txt
 src/DataComplice.egg-info/requires.txt
 src/DataComplice.egg-info/top_level.txt
 src/datacomplice/__init__.py
+src/logging/config_logging.py
 src/my_package/__init__.py
 src/my_package/my_module.py

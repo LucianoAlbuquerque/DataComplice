@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "root": {
+      "class": "logging.Formatter",
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    },
+    "default_file": {
+      "class": "logging.Formatter",
+      "format": "%(asctime)s, %(name)s, %(levelname)s, %(message)s"
+    },
+    "default_stream": {
+      "class": "logging.Formatter",
+      "format": "%(name)s - %(levelname)s - %(message)s"
+    }
+  },
+  "handlers": {
+    "root_handler": {
+      "class": "logging.StreamHandler",
+      "stream": "ext://sys.stdout",
+      "formatter": "root",
+      "level": "WARNING"
+    },
+    "file_handler": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "filename": "log.log",
+      "encoding": "utf-8",
+      "formatter": "default_file",
+      "maxBytes": 5242880,
+      "backupCount": 5
+    },
+    "stream_handler": {
+      "class": "logging.StreamHandler",
+      "stream": "ext://sys.stdout",
+      "formatter": "default_stream"
+    }
+  },
+  "loggers": {
+    "meuapp": {
+      "handlers": ["file_handler", "stream_handler"],
+      "level": "DEBUG"
+    }
+  },
+  "root": {
+    "handlers": ["root_handler"]
+  }
+}

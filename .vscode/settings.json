@@ -1,7 +1,7 @@
 {
   "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
-  "editor.fontSize": 24,
+  "editor.fontSize": 14,
   "debug.console.fontSize": 14,
   "terminal.integrated.fontSize": 14,
   "editor.glyphMargin": true,
@@ -82,5 +82,6 @@
       "comments": true,
       "strings": true
     }
-  }
+  },
+  "python.terminal.useEnvFile": true
 }
