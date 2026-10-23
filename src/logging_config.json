@@ -24,7 +24,7 @@
     },
     "file_handler": {
       "class": "logging.handlers.RotatingFileHandler",
-      "filename": "log.log",
+      "filename": "app_logs/log.log",
       "encoding": "utf-8",
       "formatter": "default_file",
       "maxBytes": 5242880,
